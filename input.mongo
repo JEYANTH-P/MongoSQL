@@ -1,0 +1,12 @@
+db.users.find();
+db.users.find({name:"Jeyanth"})
+db.users.find({name:"Jeyanth",rollno:2022115064})
+db.users.find({name:"Jeyanth",rollno:2022115064,age:70})
+db.users.find({name:"Jeyanth",rollno:2022115064},{ name:1 ,age:1})
+db.users.find({name:"Jeyanth",rollno:2022115064},{ name:1 ,age:1 ,dept:1})
+db.users.find({name:"Jeyanth",rollno:2022115064,dept:"IT"},{ name:1 ,age:1 ,dept:1})
+db.users.find({name:"Jeyanth",age:{"$gt":20}})
+db.users.find({name:"Jeyanth",age:{"$gte":20}})
+db.users.find({name:"Jeyanth",cgpa:{"$lte":50}})
+db.users.find({name:"Jeyanth",cgpa:{"$lt":9}},{ name:1})
+
